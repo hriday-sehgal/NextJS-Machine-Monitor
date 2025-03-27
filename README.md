@@ -1,34 +1,64 @@
 # Machine Monitoring Dashboard
 
-A modern dashboard for monitoring industrial machines built with Next.js.
+A full-stack application for monitoring machine data in real-time built with Next.js and NestJS.
 
 ## Features
 
-- Responsive dashboard with machine data
-- Auto-refresh every 10 seconds
-- Machine details page with temperature history
-- JWT authentication
-- Modern UI with Tailwind CSS
+- Login with JWT authentication
+- Machine dashboard with auto-refresh
+- Machine details page with temperature charts
+- NestJS backend with protected routes
+- Real-time data updates (every 10 seconds)
 
 ## Tech Stack
 
-- Next.js 14
+### Frontend (Next.js)
+- React with Next.js
 - TypeScript
-- Tailwind CSS
-- React Query
-- Vite
-- Shadcn UI
+- Tailwind CSS for styling
+- Shadcn UI components
+- Framer Motion for animations
+- React Query for data fetching
+
+### Backend (NestJS)
+- NestJS framework
+- JWT authentication
+- RESTful API endpoints
+- TypeScript
+- Swagger API documentation
 
 ## Setup & Installation
 
 ### Prerequisites
-
 - Node.js (v16 or later)
-- npm
+- npm or yarn
 
-### Installation
+### Backend Setup
 
-1. Clone the repository
+1. Navigate to the backend directory:
+```bash
+cd backend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run start:dev
+```
+
+The backend will run on http://localhost:3001.
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
 2. Install dependencies:
 ```bash
 npm install
@@ -39,35 +69,43 @@ npm install
 npm run dev
 ```
 
-The application will run on http://localhost:3002
+The frontend will run on http://localhost:3000.
+
+## API Endpoints
+
+### Authentication
+- `POST /login` - Login with email and password (admin@example.com / password123)
+
+### Machines (Protected Routes)
+- `GET /machines` - Get all machines
+- `GET /machines/:id` - Get a specific machine by ID
+- `POST /machines/:id/update` - Update a machine's readings
 
 ## Default Login Credentials
-
 - Email: admin@example.com
 - Password: password123
 
 ## Project Structure
 
-```
-src/
-├── components/    # Reusable UI components
-├── pages/         # Next.js pages
-├── lib/           # Utility functions and API client
-├── hooks/         # Custom React hooks
-└── styles/        # Global styles
-```
+### Frontend
+- `/pages` - Next.js pages
+- `/components` - Reusable UI components
+- `/hooks` - Custom React hooks
+- `/lib` - Utility functions and API client
+- `/styles` - Global styles
 
-## Development
+### Backend
+- `/auth` - Authentication module
+- `/machines` - Machines module
+- `main.ts` - Application entry point
 
-The frontend uses Vite for fast development with hot module replacement.
+## Copyright Disclaimer
 
-## Environment Variables
+Copyright 2025 Hriday Sehgal. All rights reserved.
 
-Create a `.env` file in the root directory with:
-```
-VITE_API_URL=http://localhost:3001
-```
+This project and its source code are the proprietary intellectual property of Hriday Sehgal. Unauthorized copying, modification, distribution, or reproduction in any form without explicit permission is strictly prohibited.
 
-## License
+## Contact
 
-UNLICENSED
+For inquiries or collaborations, reach out via:
+- **Email**: hriday.career@gmail.com
