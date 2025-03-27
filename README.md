@@ -19,6 +19,7 @@ A full-stack application for monitoring machine data in real-time built with Nex
 - Shadcn UI components
 - Framer Motion for animations
 - React Query for data fetching
+- Recharts for temperature chart
 
 ### Backend (NestJS)
 - NestJS framework
