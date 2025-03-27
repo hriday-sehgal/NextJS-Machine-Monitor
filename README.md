@@ -47,29 +47,24 @@ npm install
 
 3. Start the development server:
 ```bash
-npm run start:dev
+npm run dev
 ```
 
 The backend will run on http://localhost:3001.
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
 
-The frontend will run on http://localhost:3000.
+The frontend will run on http://localhost:3002.
 
 ## API Endpoints
 
