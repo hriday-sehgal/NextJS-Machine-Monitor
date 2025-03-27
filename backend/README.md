@@ -112,6 +112,13 @@ npm run start:prod
 
 Swagger UI is available at http://localhost:3001/api when the server is running.
 
-## License
+## Copyright Disclaimer
 
-UNLICENSED
+Copyright 2025 Hriday Sehgal. All rights reserved.
+
+This project and its source code are the proprietary intellectual property of Hriday Sehgal. Unauthorized copying, modification, distribution, or reproduction in any form without explicit permission is strictly prohibited.
+
+## Contact
+
+For inquiries or collaborations, reach out via:
+- **Email**: hriday.career@gmail.com
