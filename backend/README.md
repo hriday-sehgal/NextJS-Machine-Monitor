@@ -84,30 +84,6 @@ src/
 
 The backend uses hot reloading with `ts-node-dev`, so any changes to the TypeScript files will automatically restart the server.
 
-## Testing
-
-To run tests:
-```bash
-npm run test
-```
-
-For watch mode:
-```bash
-npm run test:watch
-```
-
-## Building for Production
-
-To build the project:
-```bash
-npm run build
-```
-
-To start the production server:
-```bash
-npm run start:prod
-```
-
 ## API Documentation
 
 Swagger UI is available at http://localhost:3001/api when the server is running.
