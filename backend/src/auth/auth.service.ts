@@ -8,7 +8,6 @@ export class AuthService {
   constructor(private jwtService: JwtService) {}
 
   async login(loginDto: LoginDto) {
-    // In a real app, you'd check the credentials against a database
     if (
       loginDto.email !== 'admin@example.com' ||
       loginDto.password !== 'password123'
