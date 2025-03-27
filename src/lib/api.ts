@@ -2,7 +2,7 @@ import { AuthResponse, LoginCredentials, Machine, MachineUpdatePayload } from "@
 import { getToken } from "./auth";
 
 // Base API URL - this would point to your NestJS backend
-const API_URL = 'http://localhost:3001'; // Changed to use the backend port
+const API_URL = 'http://localhost:3001'; 
 
 // Helper function for handling API responses
 const handleResponse = async (response: Response) => {
